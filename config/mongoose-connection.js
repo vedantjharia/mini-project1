@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
+const config = require('config');
+const debuger = require('debug')('development:mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/scatch")
+mongoose
+.connect(`${config.get("MONGODB_URI")}/scatch`)
 .then(() => {
-    console.log("Database connected successfully");    
+    debuger("Database connected successfully");    
 })
 .catch((err) => {
-    console.error("Database connection error:", err);
+   debuger("Database connection error:", err);
 });
 
-module.exports = mongoose.connection; // Export the mongoose connection for use in other files
-// This allows you to use the mongoose connection in other parts of your application
+module.exports = mongoose.connection; 
