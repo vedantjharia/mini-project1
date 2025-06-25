@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'CircularWeb';
+    src: url('../fonts/circularweb-book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'General';
+    src: url('../fonts/general.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robert';
+    src: url('../fonts/robert-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robert';
+    src: url('../fonts/robert-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zentry';
+    src: url('../fonts/zentry-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
